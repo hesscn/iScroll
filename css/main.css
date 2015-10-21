@@ -1,0 +1,187 @@
+@charset 'utf-8';
+body { font-family: '微软雅黑', sans-serif; text-decoration: none; color: #000; background: #fff; -webkit-font-smoothing: antialiased; font-smoothing: antialiased }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0 }
+ol, ul { list-style: none }
+.clear { clear: both }
+.clearfix { font-size: 0; display: block; visibility: hidden; clear: both; zoom: 1; height: 0 }
+h1, h2, h3, h4, h5, h6 { font-family: 'Lato', sans-serif; font-weight: 400; margin-bottom: 10px; color: #000 }
+h1 { font-size: 32px; line-height: 36px }
+h2 { font-size: 28px; line-height: 32px }
+h3 { font-size: 24px; line-height: 28px }
+h4 { font-size: 20px; line-height: 24px }
+h5 { font-size: 18px; line-height: 22px }
+h6 { font-size: 16px; line-height: 20px }
+p, i { font-size: 14px; line-height: 23px; color: #666; }
+body { padding: 20px 0 }
+#wrapper { width: 1250px; margin: 0 auto; background-color: #fff; -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, .2); -moz-box-shadow: 0 0 5px 1px rgba(0, 0, 0, .2); box-shadow: 0 0 5px 1px rgba(0, 0, 0, .2); *width: 1250px; _border: 1px solid #ccc }
+#teacher { position: relative; overflow: hidden; height: 278px; }
+#teacher li { margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px dashed #ccc; }
+#teacher a { display: block; width: 100%; height: 100px; overflow: hidden; padding: 10px 0; position: relative; }
+#teacher a:hover { background-color: #dddfe4; color: #fff; }
+#teacher img { width: 100px; height: 100px; float: right; margin-left: 10px; display: block; -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, .2); -moz-box-shadow: 0 0 5px 1px rgba(0, 0, 0, .2); box-shadow: 0 0 5px 1px rgba(0, 0, 0, .2); }
+#teacher h4 { text-decoration: blink; margin: 0; padding: 5px 0; color: #000; letter-spacing: 0; text-shadow: 2px 2px 4px #666; }
+#teacher p { font-size: 12px; line-height: 1.8; display: block; position: absolute; bottom: 10px; left: 0; width: 150px; height: 60px; overflow: hidden; }
+#bulletin { overflow: hidden; height: 278px; width: 100%; }
+#bulletin li { margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px dashed #ccc; }
+#bulletin h4 { font-size: 18px; font-weight: 900; color: #000 }
+#bulletin p { font-size: 14px; text-indent: 2em; }
+#exhibition { height: 150px; width: 96%; overflow: hidden; margin: 20px 0; position: relative; padding: 0; float: right;}
+#exhibition ul { width: 200%; }
+#exhibition li { width: 150px; float: left; position: relative;}
+#exhibition li a{ width: 140px; height:150px;display: block; position: relative;padding: 0;margin: 0;}
+#exhibition img { width: 140px; height: 150px; padding-right: 10px; }
+#exhibition h4{position: absolute;bottom:0;left:0;right:0;height:20px;line-height:20px;background: #DDD;opacity: 0.5;-moz-opacity: 0.5;filter:alpha(opacity=50);margin: 0;padding: 0;font: 15px/normal "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;text-align: center;}
+.prev, .next { position: absolute; z-index: 100; top: 45px; }
+i.arrow { display: inline; opacity: 0.6; font-size: 60px; text-align: center; color: #f60; cursor: pointer; }
+.prev { left: 0; }
+.next { right: 0; }
+
+.container { overflow: hidden; height: 278px; padding: 10px; border: 1px solid #eee; }
+
+span.verysmall, p.verysmall, .verysmall { font-size: 10px; line-height: 21px }
+span.small, p.small, a.small, a.small:visited, a.small:hover { font-size: 12px; line-height: 22px }
+span.medium, p.medium, a.medium, a.medium:visited, a.medium:hover { font-size: 16px; line-height: 24px }
+strong { font-weight: 900 }
+a, a:visited { text-decoration: none; color: #333 }
+a:hover { text-decoration: none; color: #f27935 }
+span.big, p.big { font-size: 18px }
+.italic { font-style: italic }
+span.thin, p.thin { font-weight: 300 }
+span.quote, p.quote { font-size: 20px; font-weight: 400; line-height: 25px; color: #000 }
+span.white, p.white, .white { color: #fff }
+span.black, p.black, .black, a.black, a.black:visited { color: #000 }
+span.gray, p.gray, .gray { color: #6f6d6c }
+span.darkgray, p.darkgray, .darkgray { color: #737373 }
+span.lightgray, p.lightgray { color: #aaa }
+.bold { font-weight: 600 }
+.subfooter p { font-size: 13px; line-height: 15px; color: #b2b2b2 }
+.footer p { color: #cacaca }
+i.mini { font-size: 10px; line-height: 12px !important; margin-top: 2px; padding: 0 1px 0 1px }
+i.verysmall { font-size: 12px; line-height: 21px !important; color: #339; margin-right: 3px; }
+i.small { font-size: 14px; line-height: 21px !important; margin: 0 10px; color: #fff }
+i.normal { font-size: 18px; line-height: 18px !important }
+i.medium { font-size: 26px; line-height: 25px !important }
+i.large { font-size: 40px; line-height: 45px !important }
+i.extremlarge { font-size: 50px; line-height: 60px !important }
+.divide0 { width: 100%; height: 0 }
+.divide2 { width: 100%; height: 2px }
+.divide3 { width: 100%; height: 3px }
+.divide5 { width: 100%; height: 5px }
+.divide10 { width: 100%; height: 10px }
+.divide15 { width: 100%; height: 15px }
+.divide20 { width: 100%; height: 20px }
+.divide25 { width: 100%; height: 25px }
+.divide30 { width: 100%; height: 30px }
+.divide35 { width: 100%; height: 35px }
+.divide40 { width: 100%; height: 40px }
+.divide45 { width: 100%; height: 40px }
+.divide50 { width: 100%; height: 50px }
+.divide55 { width: 100%; height: 55px }
+.divide60 { width: 100%; height: 60px }
+.rm1 { margin-right: 1px }
+.rm2 { margin-right: 2px }
+.rm5 { margin-right: 5px }
+.rm10 { margin-right: 10px }
+.rm15 { margin-right: 15px }
+.rm20 { margin-right: 20px }
+.rm25 { margin-right: 25px }
+.rm30 { margin-right: 30px }
+.rm40 { margin-right: 40px }
+.lm1 { margin-left: 1px }
+.lm5 { margin-left: 5px }
+.lm7 { margin-left: 7px }
+.lm10 { margin-left: 10px }
+.lm15 { margin-left: 15px }
+.lm20 { margin-left: 20px }
+.lm25 { margin-left: 25px }
+.lm30 { margin-left: 25px }
+.lm40 { margin-left: 40px }
+.rp10 { padding-right: 10px }
+.rp20 { padding-right: 20px }
+.lp20 { padding-left: 20px }
+.lp60 { padding-left: 60px }
+.tm4 { margin-top: 4px }
+.tm5 { margin-top: 5px }
+.tm7 { margin-top: 7px }
+.tm10 { margin-top: 10px }
+.tm15 { margin-top: 15px }
+.tm20 { margin-top: 20px }
+.tm30 { margin-top: 30px }
+.mbm1 { margin-bottom: -1px }
+.bm5 { margin-bottom: 5px !important }
+.bm15 { margin-bottom: 15px !important }
+.bm20 { margin-bottom: 20px !important }
+.nobottommargin { margin-bottom: 0 !important }
+hr { margin: 16px 0; border-top: 1px solid #d8d8d8; border-bottom: none }
+hr.dark { margin: 20px 0; border-top: 1px solid #555; border-bottom: none }
+hr.big { margin: 21px 0; border-top-width: 5px }
+hr.lower { margin: 8px 0 }
+.bottomhr { border-bottom: 1px solid #d8d8d8 }
+.coloredbottomhr { line-height: 22px; margin-bottom: -1px; border-bottom: 1px solid #f27935 }
+.lh30 { line-height: 30px !important }
+.lh35 { line-height: 35px !important }
+.lh40 { line-height: 40px !important }
+.lh45 { line-height: 45px !important }
+.lh50 { line-height: 50px !important }
+.orrangedivider { width: 100%; height: 4px; background-color: #f27935 }
+.txt-center, .centered { text-align: center }
+.mcentered { margin: auto }
+.txt-left { text-align: left }
+.txt-right { text-align: right }
+.imgfloat { float: left; margin: 5px 30px 20px 0 }
+.leftfloat { float: left }
+.rightfloat { float: right }
+.righttoleftfloat { float: right }
+/*.color1 { background-color: #f4b300 }
+.color2 { background-color: #78ba00 }
+.color3 { background-color: #2673ec }
+.color4 { background-color: #ae113d }
+.color5 { background-color: #006ac1 }
+.color6 { background-color: #bb1b1b }*/
+.color1 { background: url(../images/1.png); }
+.color2 { background: url(../images/2.png); }
+.color3 { background: url(../images/3.png); }
+.color4 { background: url(../images/4.png); }
+.color5 { background: url(../images/5.png); }
+.metro { line-height: 50px; height: 50px; text-align: center; color: #fff }
+.one_half { width: 610px; }
+.one_third { width: 32% }
+.two_third { width: 66% }
+.three_fourth { width: 74% }
+.four_fifth { width: 79% }
+.one_fourth { width: 24% }
+.one_fifth { width: 19% }
+.two_fifth { width: 39% }
+.three_fifth { width: 59% }
+.fullwidth { width: 99% }
+.fullwidth, .one_half, .one_third, .two_third, .one_fourth, .one_fifth, .three_fourth, .four_fifth, .two_fifth, .three_fifth { position: relative; float: left; margin: 0 0.5%; *margin: 0 0.9%; }
+.lastcolumn { clear: right; margin-right: 0 !important }
+#toTopHover { width: 40px; height: 40px; display: block; overflow: hidden; float: right; opacity: 0; -moz-opacity: 0; filter: alpha(opacity=0); }
+#toTop { display: none; text-decoration: none; position: fixed; bottom: 14px; right: 2%; overflow: hidden; width: 50px; height: 50px; border: none; text-indent: 100%; background: url("../images/arrow.1.png") no-repeat 0px 0px; }
+.rslides { position: relative; list-style: none; overflow: hidden; width: 100%; padding: 0; margin: 0; clear: both; }
+.rslides li { -webkit-backface-visibility: hidden; position: absolute; display: none; width: 100%; left: 0; top: 0; }
+.rslides li:first-child { position: relative; display: block; float: left; }
+.rslides img { display: block; height: 380px; float: left; width: 100%; border: 0; }
+.slide_container { position: relative; float: left; width: 100%; }
+.rslides .caption { display: block; position: absolute; z-index: 2; font-size: 14px; text-shadow: none; color: #fff; background: #000; background: rgba(0, 0, 0, .3); left: 0; right: 0; bottom: 0; padding: 10px 20px; margin: 0; max-width: none; }
+.rslides .caption a, .rslides .caption a:visited { color: #fff; }
+.rslides .caption a:hover { color: #f60; }
+/*原样式
+.rslides_nav { position: absolute; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); top: 52%; left: 0; opacity: 0.5; z-index: 3; text-indent: -9999px; overflow: hidden; text-decoration: none; height: 61px; width: 38px; background: transparent url("../images/themes.gif") no-repeat left top; margin-top: -45px; }
+.rslides_nav:active { opacity: 1.0; }
+.rslides_nav.next { left: auto; background-position: right top; right: 0; }
+*/
+.rslides_nav { text-indent: -99em; }
+.rslides_nav.prev { left: 0; top: 50%; width: 31px; height: 41px; background: url(../images/news_arr_l.png) no-repeat 0 0; _background: none; _FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='../images/news_arr_l.png'); cursor: pointer; margin-top: -21px; }
+.rslides_nav.next { position: absolute; right: 0; top: 50%; width: 31px; height: 41px; background: url(../images/news_arr_r.png) no-repeat 0 0; _background: none; _FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='../images/news_arr_r.png'); cursor: pointer; margin-top: -21px; }
+.rslides_nav:active { opacity: 1.0; }
+/*居中圆点
+.rslides_tabs { position: absolute; bottom: 50px; left: 50%; z-index: 9999; }
+.rslides_tabs li { display: inline-block; float: none; _float: left; *float: left; margin-right: 5px; }
+.rslides_tabs a { text-indent: -9999px; overflow: hidden; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; background: #ccc; background: rgba(0, 0, 0, .2); display: inline-block; _display: block; *display: block; -webkit-box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, .3); -moz-box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, .3); box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, .3); width: 9px; height: 9px; }
+.rslides_tabs li a:hover, .rslides_here a { background: #222; background: rgba(0, 0, 0, .8); }
+*/
+.rslides_tabs { position: absolute; bottom: 10px; right: 10px; z-index: 9999; }
+.rslides_tabs li { display: inline-block; float: none; _float: left; *float: left; margin-left: 3px; }
+.rslides_tabs li a { display: block; background-color: #333; cursor: pointer; text-align: center; font-size: 12px; color: #fff; width: 20px; height: 20px; line-height: 20px; }
+.rslides_tabs li a:hover, .rslides_here a { color: #f00 !important; font-weight: 900; }
